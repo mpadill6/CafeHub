@@ -1,0 +1,6 @@
+CustomerID,Age,Gender,Purchase.Date,Purchase.Amount,Product
+1,"25",Female,2023-01-01,15.99,Coffee
+2,"32",Male,2023-01-02,,Tea
+3,"45",Female,2023-01-03,,Croissant
+4,"28",Male,2023-01-04,19.99,Sandwich
+5,"36",Female,2023-01-05,6.99,Muffin
