@@ -29,14 +29,27 @@ sum(is.na(loyalty_data))
 customer_data <- na.omit(customer_data)
 loyalty_data <- na.omit(loyalty_data)
 
+# Check that missing values are removed
+sum(is.na(customer_data))
+sum(is.na(loyalty_data))
+
+#Check the class of the Age column
+class(customer_data$Age)
 # Convert `Age` column to numeric
 customer_data$Age <- as.numeric(customer_data$Age)
+#Check the class of the Age column after conversion
+class(customer_data$Age)
 
+#Check the class of the Purchase.Date column
+class(customer_data$Purchase.Date)
 # Convert `Purchase.Date` column to date format
 customer_data$Purchase.Date <- as.Date(customer_data$Purchase.Date)
+#Check the class of the Purchase.Date column after conversion
+class(customer_data$Purchase.Date)
 
 # Merge customer_data and loyalty_data
 merged_data <- merge(customer_data, loyalty_data, by = "CustomerID")
+print(head(merged_data))
 
 # Step 3: Exploratory Data Analysis
 # - Calculate the total number of customers using the `nrow()` function.
@@ -52,13 +65,13 @@ merged_data <- merge(customer_data, loyalty_data, by = "CustomerID")
 
 # Calculate total number of customers
 total_customers <- nrow(merged_data)
-
+print(total_customers)
 # Calculate average age of customers
 average_age <- mean(merged_data$Age)
-
+print(average_age)
 # Determine gender distribution
 gender_distribution <- table(merged_data$Gender)
-
+print(gender_distribution)
 # Calculate average purchase amount per customer
 average_purchase_amount <- mean(merged_data$Purchase.Amount)
 
@@ -85,6 +98,8 @@ for (i in 1:total_customers) {
 
 # Count the number of customers in each loyalty tier
 loyalty_tier_count <- table(customer_loyalty_tier)
+print(loyalty_tier_count)
+
 
 # Step 4: Summary Report
 # - Create a new variable named `summary_report` and assign an empty character vector to it.
