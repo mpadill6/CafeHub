@@ -50,4 +50,8 @@ print(average_purchase_amount)
 
 # - Identify the top 5 most frequently purchased products using the `table()` function on the `Product` column and selecting the top 5 using the `head()` function.
 top_products <- head(sort(table(customer_data$Product), decreasing = TRUE), 5)
-print(top_products)    
+print(top_products)
+
+
+#AI Addd X statistics such as median X and median Y
+
