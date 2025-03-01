@@ -74,7 +74,7 @@ gender_distribution <- table(merged_data$Gender)
 print(gender_distribution)
 # Calculate average purchase amount per customer
 average_purchase_amount <- mean(merged_data$Purchase.Amount)
-
+print(average_purchase_amount)
 # Initialize variables to store customer analysis results
 customer_purchases <- numeric(total_customers)
 customer_loyalty_points <- numeric(total_customers)
@@ -114,7 +114,7 @@ summary_report <- character()
 # Concatenate analysis results into the summary report
 summary_report <- c(summary_report, paste("Total Customers:", total_customers))
 summary_report <- c(summary_report, paste("Average Age:", round(average_age, 2)))
-summary_report <- c(summary_report, paste("Gender Distribution:", paste(names(gender_distribution), collapse = ", ")))
+#summary_report <- c(summary_report, paste("Gender Distribution:", paste(names(gender_distribution), collapse = ", ")))
 summary_report <- c(summary_report, paste("Average Purchase Amount:", round(average_purchase_amount, 2)))
 summary_report <- c(summary_report, paste("Loyalty Tier Count:", paste(names(loyalty_tier_count), ":", loyalty_tier_count, collapse = ", ")))
 
