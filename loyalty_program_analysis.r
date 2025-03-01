@@ -7,8 +7,8 @@
 # - Print the first few rows of both datasets using the `head()` function to verify the import.
 
 # Import customer data
-customer_data <- read.csv("customer_data.csv")
-loyalty_data <- read.csv("loyalty_data.csv")
+customer_data <- read.csv("/Users/mariopadilla/R Projects/CafeHub/customer_data.csv")
+loyalty_data <- read.csv("/Users/mariopadilla/R Projects/CafeHub/loyalty_data.csv")
 
 # Print the first few rows of the data
 print(head(customer_data))

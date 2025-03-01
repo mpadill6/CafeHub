@@ -1,4 +1,4 @@
 CustomerID,Age,Gender,Purchase.Date,Purchase.Amount,Product
 1,25,Female,2023-01-01,15.99,Coffee
 2,32,Male,2023-01-02,12.50,Tea
-3,45,Female,2023-01-03,8.99,Croissant
+3,45,Female,2023-01-03,,Croissant
